@@ -88,10 +88,7 @@
           &:hover {
             .my-buttons(@porcelain,@btn-bg-color);
           }
-
-
         }
-
       }
     }
 
@@ -112,4 +109,36 @@
       }
     }
   }
+
+  .form {
+    font-size: 1.6rem;
+    padding: 4%;
+    border-top: 1px solid #dee2e6;
+
+    form {
+    .my-flex();
+    }
+
+    .form-items-container {
+      width: 50%;
+    }
+  
+    .form-item {
+      margin: 2%;
+    }
+
+    .btn {
+      width: 50%;
+      button {
+        .my-buttons(@btn-bg-color,@porcelain);
+
+        &:hover {
+          .my-buttons(@porcelain,@btn-bg-color);
+        }
+      }
+    }
+  
+  }
+  
+ 
 }// home
