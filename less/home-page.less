@@ -61,6 +61,14 @@
       }
 
       .btn {
+        button {
+          .my-buttons(@btn-bg-color,@porcelain);
+
+          &:hover {
+            .my-buttons(@porcelain,@btn-bg-color);
+          }
+        }
+
       }
     }
 
