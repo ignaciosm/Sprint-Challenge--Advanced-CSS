@@ -11,6 +11,19 @@ nav {
     font-family: @headings;
     color: @header-font-color;
     margin: 1% 0;
+
+    @media @phone {
+      width: 100%;
+      text-align: center;
+      height: @nav-height;
+      position: fixed;
+      top: 0;
+      background: @nav-bg;
+      border-bottom: 1px solid @main-border-color;
+      margin: 0;
+      padding: 1% 0;
+    
+    }
   }
 
   .nav-links {
@@ -21,7 +34,8 @@ nav {
 
     @media @phone {
       flex-direction: column;
-      .mobile-style()
+      .mobile-style();
+      margin-top: @nav-height;
     }
 
     .link {
